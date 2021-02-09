@@ -43,31 +43,18 @@ canvas.onmousedown = function(ev) {
 ---
 
 ```js
-function click(ev, gl, canvas, a_Position) {
-  var x = ev.clientX;
-  var y = ev.clientY;
-  var rect = ev.target.getBoundingClientRect();
+/**
+* 注掉这句代码后，鼠标点击后背景变为了透明。原因是绘制完点后，颜色缓冲区被webgl系统重置
+* 成了默认的(0.0, 0.0, 0.0, 0.0)。
+* 所以这句代码可理解为“填充背景色”。
+*/
+gl.clear(gl.COLOR_BUFFER_BIT);
 
-  x = ((x - rect.left) - canvas.width / 2) / (canvas.width / 2);
-  y = (canvas.height / 2 - (y - rect.top)) / (canvas.height / 2);
+var len = g_points.length;
+for(let i = 0; i < len; i += 2) {
+gl.vertexAttrib3f(a_Position, g_points[i], g_points[i + 1], 0.0);
 
-  g_points.push(x, y);
-
-
-  /**
-  *  注掉这句代码后，鼠标点击后背景变为了透明。原因是绘制完点后，颜色缓冲区被webgl系统重置
-  *  成了默认的(0.0, 0.0, 0.0, 0.0)。
-  *  所以这句代码可理解为“填充背景色”。
-  */
-  gl.clear(gl.COLOR_BUFFER_BIT);
-
-  var len = g_points.length;
-  for(let i = 0; i < len; i += 2) {
-    gl.vertexAttrib3f(a_Position, g_points[i], g_points[i + 1], 0.0);
-
-    gl.drawArrays(gl.POINTS, 0, 1);
-  }
-
+gl.drawArrays(gl.POINTS, 0, 1);
 }
 ```
 
