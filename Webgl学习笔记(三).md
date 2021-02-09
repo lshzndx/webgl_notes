@@ -1,4 +1,4 @@
-# Webgl学习笔记（三）
+# WebGl学习笔记（三）
 
 ## 缓冲区对象（buffer object）
 
@@ -25,6 +25,4 @@ JavaScript中调用webgl api时使用类型化数组，可直接操作底层字�
 ## Webgl中可以绘制的基本图形
 
 ![](/assets/types.png)
-
-
 
