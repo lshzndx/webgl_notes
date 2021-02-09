@@ -20,5 +20,11 @@ JavaScript中调用webgl api时使用类型化数组，可直接操作底层字�
 
 > ArrayBuffer与TypedArray关系。
 
+---
+
+## Webgl中可以绘制的基本图形
+
+![](/assets/types.png)
+
 
 
