@@ -26,5 +26,11 @@ x = x - rect.left;
 y = y - rect.top;
 ```
 
+### 将&lt;canvas&gt;中坐标转换到webgl系统中
+
+```js
+x = (x - canvas.width / 2) / (canvas.width / 2);
+```
+
 
 
