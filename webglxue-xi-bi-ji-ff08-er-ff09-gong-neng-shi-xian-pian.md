@@ -13,3 +13,17 @@ let y = ev.clientY;
 
 ![](/assets/client.png)
 
+### 将鼠标位置转换为canvas中坐标
+
+```js
+let x = ev.clientX;
+let y = ev.clientY;
+
+let rect = ev.target.getBoundingClientRect();
+
+x = x - rect.left;
+y = y - rect.top;
+```
+
+
+
