@@ -40,5 +40,42 @@ canvas.onmousedown = function(ev) {
 }
 ```
 
+---
+
+```js
+function click(ev, gl, canvas, a_Position) {
+  var x = ev.clientX;
+  var y = ev.clientY;
+  var rect = ev.target.getBoundingClientRect();
+
+  x = ((x - rect.left) - canvas.width / 2) / (canvas.width / 2);
+  y = (canvas.height / 2 - (y - rect.top)) / (canvas.height / 2);
+
+  g_points.push(x, y);
+
+  gl.clear(gl.COLOR_BUFFER_BIT);
+
+  var len = g_points.length;
+  for(let i = 0; i < len; i += 2) {
+    gl.vertexAttrib3f(a_Position, g_points[i], g_points[i + 1], 0.0);
+
+    gl.drawArrays(gl.POINTS, 0, 1);
+  }
+
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
