@@ -26,3 +26,9 @@ JavaScript中调用webgl api时使用类型化数组，可直接操作底层字�
 
 ![](/assets/types.png)
 
+> 对应drawArrays\(\)中第一个参数mode。
+
+
+
+
+
