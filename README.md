@@ -12,31 +12,11 @@ gl.clear\(gl.COLOR\__BUFFER\_BIT_\)就是用上面设置的颜色填充这块缓
 
 ---
 
+gl.drawArrays\(gl.POINTS, 0, count\);
 
+当执行这句代码时，顶点shader会被执行count次，然后将顶点处理结果（位置、pointsize等）送入片元着色器，片元着色器输出每个片元的颜色到帧缓冲区（对应屏幕的像素点）。
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+---
 
 
 
