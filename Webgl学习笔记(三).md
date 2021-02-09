@@ -16,3 +16,5 @@ ArrayBuffer直接在CPU内存中开辟连续的空间，用于存放底层的二
 
 JavaScript中调用webgl api时使用类型化数组，可直接操作底层字节数据，并直接送入显卡，省去了中间格式转化的麻烦，提高了性能。
 
+![](/assets/typedarray.png)
+
