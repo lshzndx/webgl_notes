@@ -65,5 +65,3 @@ gl.drawArrays(gl.POINTS, 0, 1);
 
 
 
-
-
