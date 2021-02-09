@@ -16,6 +16,8 @@ gl.drawArrays\(gl.POINTS, 0, count\);
 
 当执行这句代码时，顶点shader会被执行count次，然后将顶点处理结果（位置、pointsize等）送入片元着色器，片元着色器输出每个片元的颜色到帧缓冲区（对应屏幕的像素点）。
 
+顶点shader被每个顶点执行一次，如果有一次性的运算放在该shader中，无疑会增加GPU很多无谓的运算。这是webgl应用的优化点之一。
+
 ---
 
 attribute变量和uniform变量开辟在GPU内存中，用于从CPU向GPU传递数据。
@@ -31,24 +33,6 @@ attribute变量和uniform变量开辟在GPU内存中，用于从CPU向GPU传递�
 齐次坐标的存在使得用矩阵乘法来描述顶点变换成为可能。
 
 ---
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
