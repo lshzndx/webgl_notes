@@ -10,5 +10,9 @@ GPU中的一块内存区域。可以一次性向缓冲区中对象中填充大�
 
 Int8Array、Uint8Array、Int16Array、Uint16Array、Int32Array、Uint32Array、Float32Array、Float64Array等都属于类型化数组。
 
+类型化数组是ArrayBuffer的View。
 
+ArrayBuffer直接在CPU内存中开辟连续的空间，用于存放底层的二进制数据。
+
+JavaScript中调用webgl api时使用类型化数组，可直接操作底层字节数据，并直接送入显卡，省去了中间格式转化的麻烦，提高了性能。
 
