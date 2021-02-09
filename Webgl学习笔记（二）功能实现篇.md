@@ -53,6 +53,12 @@ function click(ev, gl, canvas, a_Position) {
 
   g_points.push(x, y);
 
+
+  /**
+  *  注掉这句代码后，鼠标点击后背景变为了透明。原因是绘制完点后，颜色缓冲区被webgl系统重置
+  *  成了默认的(0.0, 0.0, 0.0, 0.0)。
+  *  所以这句代码可理解为“填充背景色”。
+  */
   gl.clear(gl.COLOR_BUFFER_BIT);
 
   var len = g_points.length;
@@ -64,18 +70,6 @@ function click(ev, gl, canvas, a_Position) {
 
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
