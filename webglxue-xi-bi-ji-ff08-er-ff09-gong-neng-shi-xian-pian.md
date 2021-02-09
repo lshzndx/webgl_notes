@@ -32,3 +32,13 @@ y = (canvas.height / 2 - y) / (canvas.height / 2);
 
 ![](/assets/canvas_webgl.png)
 
+### 事件绑定代码
+
+```js
+canvas.onmousedown = function(ev) {
+  click(ev, gl, canvas, a_Position);
+}
+```
+
+
+
