@@ -21,6 +21,7 @@ let y = ev.clientY;
 
 let rect = ev.target.getBoundingClientRect();
 
+// rect.left、rect.top是<canvas>原点在浏览器客户区中的坐标。
 x = x - rect.left;
 y = y - rect.top;
 ```
