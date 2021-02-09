@@ -2,5 +2,12 @@
 
 ## 将鼠标点击坐标转换到webgl系统中
 
+### 获取鼠标位置
+
+```js
+let x = ev.clientX;
+let y = ev.clientY;
+```
+
 
 
