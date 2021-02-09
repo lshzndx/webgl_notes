@@ -1,4 +1,4 @@
-# Webgl学习笔记（一）
+# WebGl学习笔记（一）
 
 webgl是通过JavaScript api对显卡的操作。
 
@@ -68,12 +68,4 @@ attribute变量：只在顶点shader中使用；片元shader中可以使用unifo
 ---
 
 顶点shader进行的是逐顶点操作，片元shader进行的是逐片元操作。
-
-
-
-
-
-
-
-
 
