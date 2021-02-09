@@ -4,7 +4,22 @@ webgl是通过JavaScript api对显卡的操作。
 
 ---
 
+```js
+void main() {
+  gl_Position = vec4(0.0, 0.0, 0.0, 1.0);
+  gl_PointSize = 10.0;
+}
+```
 
+```js
+void main() {
+  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
+}
+```
+
+> 最简单的定点shader与片元shader。
+
+---
 
 颜色缓冲区是GPU中的内存区域，对应显示器上的每一个像素点。
 
@@ -48,20 +63,7 @@ gl.drawArrays(gl.POINTS, 0, 1);
 
 ---
 
-```js
-void main() {
-  gl_Position = vec4(0.0, 0.0, 0.0, 1.0);
-  gl_PointSize = 10.0;
-}
-```
 
-```js
-void main() {
-  gl_FragColor = vec4(1.0, 0.0, 0.0, 1.0);
-}
-```
-
-> 最简单的定点shader与片元shader。
 
 
 
