@@ -16,9 +16,6 @@ let y = ev.clientY;
 ### 将鼠标位置转换为canvas中坐标
 
 ```js
-let x = ev.clientX;
-let y = ev.clientY;
-
 let rect = ev.target.getBoundingClientRect();
 
 // rect.left、rect.top是<canvas>原点在浏览器客户区中的坐标。
