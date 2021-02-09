@@ -63,5 +63,5 @@ gl.drawArrays(gl.POINTS, 0, 1);
 
 ---
 
-
+attribute变量：只在定点shader中使用；片元shader中可以使用uniform、varying变量。
 
