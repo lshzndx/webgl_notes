@@ -33,5 +33,5 @@ x = (x - canvas.width / 2) / (canvas.width / 2);
 y = (canvas.height / 2 - y) / (canvas.height / 2);
 ```
 
-
+![](/assets/canvas_webgl.png)
 
