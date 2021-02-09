@@ -65,6 +65,8 @@ gl.drawArrays(gl.POINTS, 0, 1);
 
 attribute变量：只在顶点shader中使用；片元shader中可以使用uniform、varying变量。
 
+具体：attribute传递与顶点相关的数据，uniform传递对于所有顶点都相同（或与顶点无关）的数据。
+
 ---
 
 顶点shader进行的是逐顶点操作，片元shader进行的是逐片元操作。
