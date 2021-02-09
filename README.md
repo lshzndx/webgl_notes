@@ -27,9 +27,9 @@ attribute变量和uniform变量开辟在GPU内存中，用于从CPU向GPU传递�
 例如：
 
 ```js
-var gl = getWebGLContext(canvas);
+const gl = getWebGLContext(canvas);
 // 拿到GPU中attribute变量地址
-var a_Position = gl.getAttribLocation(gl.program, 'a_Position');
+const a_Position = gl.getAttribLocation(gl.program, 'a_Position');
 // 向GPU中传递数据
 gl.vertexAttrib3f(a_Position, 0.5, 0.0, 0.0);
 // 画点
