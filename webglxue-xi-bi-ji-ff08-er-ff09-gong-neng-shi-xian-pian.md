@@ -36,7 +36,7 @@ y = (canvas.height / 2 - y) / (canvas.height / 2);
 
 ```js
 canvas.onmousedown = function(ev) {
-  click(ev, gl, canvas, a_Position);
+  
 }
 ```
 
