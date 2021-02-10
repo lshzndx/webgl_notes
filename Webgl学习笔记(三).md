@@ -8,6 +8,18 @@ GPU中的一块内存区域。可以一次性向缓冲区中对象中填充大�
 
 当非顶点数据包含颜色值时，因为顶点颜色在片元shader中，这时候就要用到varying变量，用来从顶点shader向片元shader传递数据。
 
+varying最简单示例：
+
+```js
+const VSHADER_SOURCE = `
+    attribute vec4 a_Color;
+    varying vec4 v_Color;
+    void main() {
+        v_Color = a_Color;
+    }
+`
+```
+
 ---
 
 ## 类型化数组
