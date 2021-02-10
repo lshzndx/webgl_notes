@@ -22,7 +22,9 @@
 
 ## 纹理
 
+### 纹理坐标
 
+![](/assets/texture_coord.png)
 
 
 
