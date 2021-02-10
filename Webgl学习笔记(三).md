@@ -21,6 +21,20 @@ const VSHADER_SOURCE = `
 `
 ```
 
+```js
+// 片元shader
+const FSHADER_SOURCE = `
+    #ifdef GL_ES
+    precision mediump float;
+    #endif
+    
+    varying vec4 v_Color;
+    void main() {
+        gl_FragColor = v_Color;
+    }
+`
+```
+
 ---
 
 ## 类型化数组
