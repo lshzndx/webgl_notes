@@ -17,7 +17,7 @@ void main() {
 }
 ```
 
-> 最简单的定点shader与片元shader。
+> 最简单的顶点shader与片元shader。
 
 ---
 
