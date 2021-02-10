@@ -27,13 +27,15 @@ const FSHADER_SOURCE = `
     #ifdef GL_ES
     precision mediump float;
     #endif
-    
+
     varying vec4 v_Color;
     void main() {
         gl_FragColor = v_Color;
     }
 `
 ```
+
+> 注意，顶点shader和片元shader中varying变量名要相同。
 
 ---
 
