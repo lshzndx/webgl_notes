@@ -26,5 +26,9 @@
 
 ![](/assets/texture_coord.png)
 
+### 将纹理图像粘贴在几何图形上
+
+
+
 
 
