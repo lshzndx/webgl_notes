@@ -39,7 +39,7 @@ gl.drawArrays\(gl.POINTS, 0, count\);
 
 attribute变量和uniform变量开辟在GPU内存中，用于从CPU向GPU传递数据。
 
-从CPU向GPU传递数据是需要时间的。这是webgl应用的优化点之一。
+> 从CPU向GPU传递数据是需要时间的。这是webgl应用的优化点之一。
 
 例如：
 
