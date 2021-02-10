@@ -12,5 +12,7 @@
 
 > 关于varying变量的说明。顶点shader中的v\_Color变量在传递给片元shader之前，经过了内插过程，所以片元shader中的varying变量和顶点shader中的varying变量实际上并不是一回事。
 
+除顶点之外，三角形表面上其他片元的颜色值都是内插出来的。
+
 
 
