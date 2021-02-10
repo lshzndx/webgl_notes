@@ -11,6 +11,7 @@ GPU中的一块内存区域。可以一次性向缓冲区中对象中填充大�
 varying最简单示例：
 
 ```js
+// 顶点shader
 const VSHADER_SOURCE = `
     attribute vec4 a_Color;
     varying vec4 v_Color;
