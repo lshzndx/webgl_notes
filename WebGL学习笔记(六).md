@@ -10,3 +10,7 @@
 
 对于每个片元，片元着色器计算出该片元的颜色，并写入颜色缓冲区。
 
+> 关于varying变量的说明。顶点shader中的v\_Color变量在传递给片元shader之前，经过了内插过程，所以片元shader中的varying变量和顶点shader中的varying变量实际上并不是一回事。
+
+
+
