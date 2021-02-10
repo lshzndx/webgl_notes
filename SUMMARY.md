@@ -6,4 +6,5 @@
 * [Webgl学习笔记\(三\)](Webgl学习笔记%28三%29.md)
 * [WebGL学习笔记\(四\)](WebGL学习笔记%28四%29.md)
 * [WebGL学习笔记\(五\)功能实现篇](WebGL学习笔记%28五%29功能实现篇.md)
+* [WebGL学习笔记\(六\)](webglxue-xi-bi-8bb028-516d29.md)
 

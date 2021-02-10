@@ -15,11 +15,11 @@ let g_last = Date.now();
 function animate(angle) {
   let now = Date.now();
   let elapsed = now - g_last;
-  
+
   g_last = now;
   // 核心代码就这一句。
   let newAngle = angle + (ANGLE_STEP * elapsed) / 1000.0;
-  
+
   return newAngle %= 360;
 }
 ```
