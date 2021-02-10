@@ -28,7 +28,5 @@
 
 ### 将纹理图像粘贴在几何图形上
 
-
-
-
+![](/assets/map_texture.png)
 
