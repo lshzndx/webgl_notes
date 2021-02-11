@@ -30,8 +30,6 @@
 
 ![](/assets/map_texture.png)
 
-
-
 ---
 
 ## 最简单的使用代码
@@ -93,6 +91,7 @@ function initVertexBuffers(gl) {
   gl.vertexAttribPointer(a_Position, 2, gl.FLOAT, false, FSIZE * 4, 0);
   gl.enableVertexAttribArray(a_Position)
 
+  // 将纹理坐标分配给a_TexCoord，并开启。
   const a_TexCoord = gl.getAttribLocation(gl.program, 'a_TexCoord');
   gl.vertexAttribPointer(a_TexCoord, 2, gl.FLOAT, false, FSIZE * 4, FSIZE * 2)
   gl.enableVertexAttribArray(a_TexCoord);
