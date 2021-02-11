@@ -152,7 +152,7 @@ const FSHADER_SOURCE = `
 function initTextures(gl, n) {
   const texture1 = gl.createTexture();
   const u_Sampler1 = gl.getUniformLocation(gl.program, 'u_Sampler1');
-  
+
   const image1 = new Image();
   image1.onload = function(){ loadTexture(gl, n, texture1, u_Sampler1, image1, 1); };
   image1.src = '../resources/circle.gif';
@@ -169,9 +169,9 @@ function loadTexture(gl, n, texture, u_Sampler, image) {
     gl.activeTexture(gl.TEXTURE1);
     g_texUnit1 = true;
   }
-  
+
   gl.uniform1i(u_Sampler, texUnit);   // Pass the texure unit to u_Sampler
-  
+
   if (g_texUnit0 && g_texUnit1) {
     gl.drawArrays(gl.TRIANGLE_STRIP, 0, n);   
   }  
