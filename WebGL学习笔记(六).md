@@ -138,5 +138,31 @@ function loadTexture(gl, n, texture, u_Sampler, image) {
 }
 ```
 
+### 多幅纹理
+
+```js
+const FSHADER_SOURCE = `
+  uniform sampler2D u_Sampler1;
+  void main() {
+    vec4 color1 = texture2D(u_Sampler1, v_TexCoord);
+    gl_FragColor = color0 * color1;
+  }
+`
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
