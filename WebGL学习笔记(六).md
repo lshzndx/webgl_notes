@@ -123,7 +123,9 @@ function loadTexture(gl, n, texture, u_Sampler, image) {
   // 绑定纹理对象
   gl.bindTexture(gl.TEXTURE_2D, texture)
 
+  // 配置纹理参数
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  // 配置纹理图像
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, image);
 
   // 将0号纹理单元传递给着色器中的取样器变量
