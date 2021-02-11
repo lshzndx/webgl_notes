@@ -101,6 +101,7 @@ function initVertexBuffers(gl) {
 }
 
 function initTextures(gl, n) {
+  // 创建一个纹理对象
   const texture = gl.createTexture();
 
   const u_Sampler = gl.getUniformLocation(gl.program, 'u_Sampler')
