@@ -22,5 +22,7 @@ const VSHADER_SOURCE = `
 `
 ```
 
+> 这里有一个优化点。就是u\_ViewMatrix \* u\_ModelMatrix，如果放在shader中运算这两个矩阵，每一个顶点都将重复运算一遍，一个模型通常有成千上万甚至几十万个顶点，增加了GPU很多无谓的运算，更好的方式是先在JavaScript中算好，传递给shader。
+
 
 
