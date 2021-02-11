@@ -5,6 +5,7 @@
 ```js
 const VSHADER_SOURCE = `
     uniform mat4 u_ViewMatrix;
+    // 从这句代码就能看出来，改变摄像机状态，就是直接对顶点的变换。
     gl_Position = u_ViewMatrix * a_Position;
 `
 ```
