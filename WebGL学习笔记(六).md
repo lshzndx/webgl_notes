@@ -126,6 +126,7 @@ function loadTexture(gl, n, texture, u_Sampler, image) {
   gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
   gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGB, gl.RGB, gl.UNSIGNED_BYTE, image);
 
+  // 将0号纹理单元传递给着色器中的取样器变量
   gl.uniform1i(u_Sampler, 0);
 
   gl.clear(gl.COLOR_BUFFER_BIT)
