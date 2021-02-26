@@ -37,9 +37,20 @@ Object3D.updateMatrix = function() {
 
     this.matrixWorldNeedsUpdate = true;    
 }
+
+// 最终是将Object3D的matrixWorld送入shader
+function setProgram() {
+    p_uniforms.setValue( _gl, 'modelViewMatrix', object.modelViewMatrix );
+    p_uniforms.setValue( _gl, 'normalMatrix', object.normalMatrix );
+    p_uniforms.setValue( _gl, 'modelMatrix', object.matrixWorld );
+    
+    return program;
+}
 ```
 
 > matrix 为Object3D的本地坐标；matrixWorld为世界坐标。
+>
+> Object3D的position、quaternion、scale会复合成matrix，matrix被计算进matrixWorld，最终matrixWorld被送入shader。
 
 
 
