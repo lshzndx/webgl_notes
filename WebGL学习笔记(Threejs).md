@@ -30,6 +30,12 @@ Object3D.updateMatrixWorld = function(force) {
 
     }    
 }
+ 
+Object3D.updateMatrix = function() {
+    this.matrix.compose( this.position, this.quaternion, this.scale );
+
+    this.matrixWorldNeedsUpdate = true;    
+}
 ```
 
 
