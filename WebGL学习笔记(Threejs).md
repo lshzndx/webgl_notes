@@ -10,6 +10,7 @@
 // 更新所有顶点的matrix
 scene.updateMatrixWorld();
 Object3D.updateMatrixWorld = function(force) {
+    // 将当前的position、quaternion、scale复合成matrix
     if ( this.matrixAutoUpdate ) this.updateMatrix();
     // matrixWorldNeedsUpdate可以手动设置，也可以在上一行的updateMatrix里被置为true
     if ( this.matrixWorldNeedsUpdate || force ) {
@@ -30,7 +31,7 @@ Object3D.updateMatrixWorld = function(force) {
 
     }    
 }
- 
+
 Object3D.updateMatrix = function() {
     this.matrix.compose( this.position, this.quaternion, this.scale );
 
