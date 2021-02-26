@@ -7,7 +7,7 @@
 #### 更新顶点的matrix
 
 ```js
-// 更新场景的matrix
+// 更新所有顶点的matrixWorld
 scene.updateMatrixWorld();
 Object3D.updateMatrixWorld = function(force) {
     if ( this.matrixAutoUpdate ) this.updateMatrix();
@@ -27,8 +27,15 @@ Object3D.updateMatrixWorld = function(force) {
         this.matrixWorldNeedsUpdate = false;
 
         force = true;
-
     }    
+    
+    const children = this.children;
+    
+    for ( let i = 0, l = children.length; i < l; i ++ ) {
+    
+      children[ i ].updateMatrixWorld( force );
+    
+    }
 }
 
 // 将当前的position、quaternion、scale复合成matrix
@@ -43,7 +50,7 @@ function setProgram() {
     p_uniforms.setValue( _gl, 'modelViewMatrix', object.modelViewMatrix );
     p_uniforms.setValue( _gl, 'normalMatrix', object.normalMatrix );
     p_uniforms.setValue( _gl, 'modelMatrix', object.matrixWorld );
-    
+
     return program;
 }
 ```
