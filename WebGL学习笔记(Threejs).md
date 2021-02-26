@@ -39,5 +39,7 @@ Object3D.updateMatrix = function() {
 }
 ```
 
+> matrix 为Object3D的本地坐标；matrixWorld为世界坐标。
+
 
 
