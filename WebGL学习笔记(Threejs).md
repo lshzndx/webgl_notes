@@ -7,7 +7,7 @@
 #### 更新顶点的matrix
 
 ```js
-// 更新所有顶点的matrix
+// 更新场景的matrix
 scene.updateMatrixWorld();
 Object3D.updateMatrixWorld = function(force) {
     if ( this.matrixAutoUpdate ) this.updateMatrix();
