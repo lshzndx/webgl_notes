@@ -9,34 +9,28 @@
 ```js
 // 更新所有顶点的matrix
 scene.updateMatrixWorld();
-Object3D.updateMatrixWorld = function() {
-	if ( this.matrixAutoUpdate ) this.updateMatrix();
-	
-	if ( this.matrixWorldNeedsUpdate || force ) {
-	
-		if ( this.parent === null ) {
-	
-			this.matrixWorld.copy( this.matrix );
-	
-		} else {
-	
-			this.matrixWorld.multiplyMatrices( this.parent.matrixWorld, this.matrix );
-	
-		}
-	
-		this.matrixWorldNeedsUpdate = false;
-	
-		force = true;
-	
-	}    
+Object3D.updateMatrixWorld = function(force) {
+    if ( this.matrixAutoUpdate ) this.updateMatrix();
+    // matrixWorldNeedsUpdate可以手动设置，也可以在上一行的updateMatrix里被置为true
+    if ( this.matrixWorldNeedsUpdate || force ) {
+
+        if ( this.parent === null ) {
+
+            this.matrixWorld.copy( this.matrix );
+
+        } else {
+
+            this.matrixWorld.multiplyMatrices( this.parent.matrixWorld, this.matrix );
+
+        }
+
+        this.matrixWorldNeedsUpdate = false;
+
+        force = true;
+
+    }    
 }
 ```
-
-
-
-
-
-
 
 
 
