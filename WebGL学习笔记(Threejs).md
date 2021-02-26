@@ -28,13 +28,13 @@ Object3D.updateMatrixWorld = function(force) {
 
         force = true;
     }    
-    
+
     const children = this.children;
-    
+
     for ( let i = 0, l = children.length; i < l; i ++ ) {
-    
+
       children[ i ].updateMatrixWorld( force );
-    
+
     }
 }
 
@@ -58,6 +58,8 @@ function setProgram() {
 > matrix 为Object3D的本地坐标；matrixWorld为世界坐标。
 >
 > Object3D的position、quaternion、scale会复合成matrix，matrix被计算进matrixWorld，最终matrixWorld被送入shader。
+>
+> 从这里寻找优化点（待续）。
 
 
 
