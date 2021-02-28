@@ -10,7 +10,7 @@
 
 ![](/assets/rotate.png)
 
-> 旋转变换矩阵
+> 旋转变换矩阵\(绕z轴\)
 
 ![](/assets/transform.png)
 
