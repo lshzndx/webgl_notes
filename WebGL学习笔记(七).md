@@ -24,5 +24,27 @@ const VSHADER_SOURCE = `
 
 > 这里有一个优化点。就是u\_ViewMatrix \* u\_ModelMatrix，如果放在shader中运算这两个矩阵，每一个顶点都将重复运算一遍，一个模型通常有成千上万甚至几十万个顶点，增加了GPU很多无谓的运算，更好的方式是先在JavaScript中算好，传递给shader。
 
+---
+
+## 关于webgl的坐标系
+
+### 默认情况
+
+默认情况下，webgl没有“左手”、“右手”的概念，只是按照点的顺序进行绘制，即不关系z坐标值。
+
+### 加入裁剪坐标系
+
+当启用隐藏面消除时（gl.enable\(gl.DEPTH\_TEST\)），就用到了裁剪坐标系。而裁剪坐标系本身是左手坐标系的。
+
+### 加入可视空间矩阵
+
+以正交投影（矩阵）为例：
+
+![](/assets/impo1rt.png)
+
+即，gl_Position = u_MvpMatrix \* a\_Position;
+
+一般情况下far &gt; near，因此3行3列处的值为负，这个值代表z方向的缩放变换，至此，webgl最终变成了“右手坐标系”。
+
 
 
