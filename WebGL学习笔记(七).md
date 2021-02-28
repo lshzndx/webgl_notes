@@ -42,9 +42,17 @@ const VSHADER_SOURCE = `
 
 ![](/assets/impo1rt.png)
 
-即，gl_Position = u_MvpMatrix \* a\_Position;
+即，gl\_Position = u\_MvpMatrix \* a\_Position;
 
 一般情况下far &gt; near，因此3行3列处的值为负，这个值代表z方向的缩放变换，至此，webgl最终变成了“右手坐标系”。
+
+---
+
+### 共治一炉
+
+```js
+gl_Position = u_ProjMatrix * u_ViewMatrix * u_ModelMatrix * a_Position;
+```
 
 
 
