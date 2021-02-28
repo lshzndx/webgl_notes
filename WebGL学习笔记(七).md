@@ -51,8 +51,11 @@ const VSHADER_SOURCE = `
 ### 共治一炉
 
 ```js
+// u_MvpMatrix * a_Position;
 gl_Position = u_ProjMatrix * u_ViewMatrix * u_ModelMatrix * a_Position;
 ```
+
+
 
 
 
