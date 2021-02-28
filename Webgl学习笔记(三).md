@@ -51,7 +51,7 @@ JavaScript中调用webgl api时使用类型化数组，可直接操作底层字�
 
 ![](/assets/typedarray.png)
 
-> ArrayBuffer与TypedArray关系。
+> ArrayBuffer的View示意。
 
 ---
 
