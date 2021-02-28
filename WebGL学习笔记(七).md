@@ -59,3 +59,11 @@ gl_Position = u_ProjMatrix * u_ViewMatrix * u_ModelMatrix * a_Position;
 
 ![](/assets/imp21ort.png)
 
+---
+
+## 层次结构模型
+
+基本原理（常用方法）按照模型中各个部件的层次顺序，从高到低逐一绘制，并在每个关节上应用模型矩阵。
+
+
+
