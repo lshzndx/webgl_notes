@@ -18,5 +18,11 @@
 
 &lt;表面的反射光颜色&gt; = &lt;漫反射光颜色&gt; + &lt;环境反射光颜色&gt;
 
+### cosΘ的计算
+
+![](/assets/impo32rt.png)
+
+> cosΘ = &lt;光线方向&gt; ✖️ &lt;法线方向&gt;
+
 
 
