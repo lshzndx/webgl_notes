@@ -12,5 +12,7 @@
 
 ![](/assets/impo3rt.png)
 
+> &lt;环境反射光颜色&gt; = &lt;入射光颜色&gt; ✖️ &lt;表面基底色&gt;
+
 
 
