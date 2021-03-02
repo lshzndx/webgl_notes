@@ -9,4 +9,5 @@
 * [WebGL学习笔记\(六\)](WebGL学习笔记%28六%29.md)
 * [WebGL学习笔记\(七\)](WebGL学习笔记%28七%29.md)
 * [WebGL学习笔记\(Threejs\)](WebGL学习笔记%28Threejs%29.md)
+* [WebGL学习笔记\(八\)](WebGL学习笔记%28八%29.md)
 
