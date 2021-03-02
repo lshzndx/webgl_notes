@@ -61,5 +61,13 @@ JavaScript中调用webgl api时使用类型化数组，可直接操作底层字�
 
 > 对应drawArrays\(\)中第一个参数mode。
 
+---
+
+## 关于面的正反
+
+![](/assets/imp22ort.png)
+
+> **假设观察者正面向这个三角形**
+
 
 
