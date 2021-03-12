@@ -59,7 +59,7 @@ function setProgram() {
 >
 > Object3D的position、quaternion、scale会复合成matrix，matrix被计算进matrixWorld，最终matrixWorld被送入shader。
 >
-> 从这里寻找优化点（待续 即matrixAutoUpdate）。
+> 从这里寻找优化点。
 
 ### 优化
 
