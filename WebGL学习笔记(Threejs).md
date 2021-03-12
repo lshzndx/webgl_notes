@@ -61,5 +61,15 @@ function setProgram() {
 >
 > 从这里寻找优化点（待续 即matrixAutoUpdate）。
 
+### 优化
+
+关闭场景的自动更新（scene.autoUpdate = false）。
+
+```js
+WebGLRenderer.render = function(scene, camera) {
+    if ( scene.autoUpdate === true ) scene.updateMatrixWorld();
+}
+```
+
 
 
