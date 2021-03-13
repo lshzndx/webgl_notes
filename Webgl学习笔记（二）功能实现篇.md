@@ -40,6 +40,12 @@ canvas.onmousedown = function(ev) {
 }
 ```
 
+### 3D场景中鼠标拾取原理
+
+![](/assets/opengl拾取.jpg)
+
+> 红圈处即鼠标在屏幕上的位置
+
 ---
 
 ```js
