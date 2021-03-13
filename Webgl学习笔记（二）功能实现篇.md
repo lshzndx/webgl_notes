@@ -44,7 +44,7 @@ canvas.onmousedown = function(ev) {
 
 ![](/assets/opengl拾取.jpg)
 
-> 摄像机近平面上的红圈即鼠标在屏幕上的位置\(webgl坐标系\)
+> 摄像机近平面上的红圈即鼠标在屏幕上的位置\(webgl坐标系下\)
 
 ---
 
