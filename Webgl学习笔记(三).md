@@ -1,4 +1,4 @@
-# WebGl学习笔记（三）
+# WebGL学习笔记（三）
 
 ## 缓冲区对象（buffer object）
 

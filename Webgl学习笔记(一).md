@@ -1,4 +1,4 @@
-# WebGl学习笔记（一）
+# WebGL学习笔记（一）
 
 webgl是通过JavaScript api对显卡的操作。
 
