@@ -44,7 +44,7 @@ canvas.onmousedown = function(ev) {
 
 ![](/assets/opengl拾取.jpg)
 
-> 红圈处即鼠标在屏幕上的位置
+> A'附近较小的红圈即鼠标在屏幕上的位置
 
 ---
 
