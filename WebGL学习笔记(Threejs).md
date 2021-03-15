@@ -73,7 +73,8 @@ WebGLRenderer.render = function(scene, camera) {
 
 > 1. three在默认情况下，每一帧中都会重新计算场景中所有mesh的matrixWorld。关闭这个选项，改为手动更新，可以提升性能。
 > 2. 手动更新方法：当某个mesh的position、scale、rotation发生改变时，直接更新其matrixWorld。
-> 3. 坑：关闭这个选项后，更新mesh的position、scale、rotation会不起作用（原因见上面代码）。
+> 3. 坑1：关闭这个选项后，更新mesh的position、scale、rotation会不起作用（原因见上面代码）。
+> 4. 坑2：通过matrixWorld直接手动更新场景时，必须关闭这个选项（原因见上面代码）。
 
 
 
