@@ -186,7 +186,3 @@ function loadTexture(gl, n, texture, u_Sampler, image) {
 
 
 
-
-
-
-
