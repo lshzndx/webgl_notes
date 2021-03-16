@@ -8,3 +8,13 @@
 
 ![](/assets/import.png)
 
+---
+
+## 雾化效果
+
+![](/assets/im1port.png)
+
+> 最简单的一种实现方式：线性雾化
+
+
+
