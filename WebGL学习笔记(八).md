@@ -36,7 +36,21 @@
 
 而采用逐片元计算光照的方式会更加逼真。
 
-> 逐片元计算光照方法：（1）由顶点着色器将世界坐标系下的顶点position、normal通过varying传给片元着色器；（2）片元着色器就得到了经过差值后的每个片元的position、normal（世界坐标系下）。
+> 逐片元计算光照方法：（1）由顶点着色器将世界坐标系下的顶点v\_Position、v\_Normal通过varying传给片元着色器；（2）片元着色器就得到了经过差值后的每个片元的v\_Position、v\_Normal（世界坐标系下）。具体计算方法：
+
+```js
+// 片元着色器
+void main() {
+    vec3 normal = normalize(v_Normal);
+    vec3 lightDirection = normalize(u_LightPosition - v_Position);
+    float nDotL = max(dot(lightDirection, normal), 0.0);
+    vec3 diffuse = u_LightColor * v_Color.rgb * nDotL;
+    vec3 ambient = u_AmbientLight * v_Color.rgb;
+    gl_FragColor = vec4(diffuse + ambient, v_Color.a);
+}
+```
+
+
 
 
 
