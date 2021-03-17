@@ -53,7 +53,7 @@ threejs中常用的3中材质
 
 ![](/assets/import4.png)
 
-
+### 构件的透明及隐藏
 
 
 
