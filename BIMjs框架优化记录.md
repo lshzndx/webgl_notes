@@ -29,7 +29,7 @@ BaseLoader.js:
 
 ![](/assets/imporct.png)
 
-threejs中常用的3中材质
+threejs中常用的3种材质
 
 * **MeshBasicMaterial**：基础材质，不感光。
 
@@ -61,7 +61,5 @@ threejs中常用的3中材质
 
 爆炸效果耗费性能，处理不好甚至导致页面卡死。
 
-
-
-
+![](/assets/importb.png)
 
