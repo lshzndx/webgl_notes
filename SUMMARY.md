@@ -11,4 +11,5 @@
 * [WebGL学习笔记\(Threejs\)](WebGL学习笔记%28Threejs%29.md)
 * [WebGL学习笔记\(八\)](WebGL学习笔记%28八%29.md)
 * [WebGL学习笔记\(九\)功能实现篇](WebGL学习笔记%28九%29功能实现篇.md)
+* [BIMjs框架优化记录](bimjskuang-jia-you-hua-ji-lu.md)
 
