@@ -29,5 +29,13 @@ BaseLoader.js:
 
 ![](/assets/imporct.png)
 
+threejs中常用的3中材质
+
+* **MeshBasicMaterial**：基础材质，不感光。
+
+* **MeshLambertMaterial：**兰伯特材质，适用于表面比较粗糙的物体，如纸张、墙壁等。感光。
+
+* **MeshPhongMaterial：**冯氏材质，适用于表面比较明亮的物体，如金属、玻璃等。感光。
+
 
 
