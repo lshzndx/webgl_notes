@@ -111,5 +111,3 @@ function mouseToGL(mouse, canvas, devicePixelRatio = 1) {
 
 
 
-
-
