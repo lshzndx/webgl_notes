@@ -23,5 +23,11 @@ ViewerImpl.js:
 renderer.setPixelRatio(window.devicePixelRatio);
 ```
 
+### 使用感光材质
+
+BaseLoader.js:
+
+![](/assets/imporct.png)
+
 
 
