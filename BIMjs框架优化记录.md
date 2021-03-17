@@ -83,7 +83,7 @@ for (let key in models) {
     }
   }
 }
-if (!_inbox) return; 
+if (!_inbox) return;
 ```
 
 ```js
@@ -106,6 +106,10 @@ function mouseToGL(mouse, canvas, devicePixelRatio = 1) {
   return { x, y };
 }
 ```
+
+### 静态更新场景
+
+
 
 
 
