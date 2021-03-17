@@ -59,7 +59,9 @@ threejs中常用的3种材质
 
 ### 原因\(ViewerImpl.js:\)：![](/assets/impyort.png)爆炸
 
-爆炸效果耗费性能，处理不好甚至导致页面卡死。
+爆炸效果耗费性能，处理不好甚至导致页面卡死。![](/assets/importb.png)
 
-![](/assets/importb.png)
+> 1. 在计算机系统中，虽然new操作与赋值操作都是O\(1\)，但new操作花费的时间成本是赋值运算的100倍。
+
+
 
