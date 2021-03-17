@@ -70,5 +70,42 @@ threejs中常用的3种材质
 
 射线探测同样较为耗费性能。通常情况下，模型只占整个viewpoint的一少部分，通过屏蔽掉模型以外的不必要的射线，无疑可以提升性能。
 
-![](/assets/importt.png)
+```js
+// mouse 是否在模型的包围盒内,包围盒以外不进行探测
+const {models} = this.viewImpl.modelManager
+let _inbox = false;
+for (let key in models) {
+  const model = models[key]
+  if (model.boundingBox) {
+    if (this.isInbox({x: event.layerX, y: event.layerY}, model.boundingBox)) {
+      _inbox = true;
+      break;
+    }
+  }
+}
+if (!_inbox) return; 
+```
+
+```js
+// 鼠标是否在模型的包围盒内
+isInbox(mouse, boudingBox, offset = 50) {
+    const {min, max} = boudingBox;
+    const canvas = this.viewImpl.three.renderer.domElement;
+    const {x: x1, y: y1} = mouseToGL(mouse, canvas, window.devicePixelRatio);
+    return (min.x - offset < x1 < max.x + offset) && (min.y - offset < y1 < max.y + offset)
+}
+```
+
+```js
+function mouseToGL(mouse, canvas, devicePixelRatio = 1) {
+  let { x, y } = mouse;
+  x = (x / (canvas.width / devicePixelRatio)) * 2 - 1;
+  y = -(y / (canvas.height / devicePixelRatio)) * 2 + 1;
+  // x = (x / window.innerWidth) * 2 - 1;
+  // y = -(y / window.innerHeight) * 2 + 1;
+  return { x, y };
+}
+```
+
+
 
