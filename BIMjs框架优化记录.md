@@ -57,7 +57,9 @@ threejs中常用的3种材质
 
 虽然从严格的复杂度意义上讲与小红砖同阶\(O\(n\)\)，但从实际的应从场景来说，仍然比小红砖快出一个数量级。
 
-原因\(ViewerImpl.js:\)：![](/assets/impyort.png)爆炸
+原因\(ViewerImpl.js:\)：![](/assets/impyort.png)
+
+### 爆炸
 
 爆炸效果耗费性能，处理不好甚至导致页面卡死。![](/assets/importb.png)
 
