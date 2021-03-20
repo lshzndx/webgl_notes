@@ -8,5 +8,9 @@ Draw calls = how many objects are being drawn to the screen.
 
 GPU一秒中可以画多少张画，并将它们显示在屏幕上。
 
+## 纹理单元
+
+纹理单元相当于机床，数量有限；图片相当于待被加工的料。
+
 
 
