@@ -73,7 +73,7 @@ attribute变量：只在顶点shader中使用；片元shader中可以使用unifo
 
 ---
 
-## 静态绘制三部曲
+## 简单静态绘制五部曲
 
 ```js
 // 1
@@ -90,11 +90,7 @@ gl.clear(gl.COLOR_BUFFER_BIT);
 gl.drawArrays(gl.TRIANGLE_STRIP, 0, n);
 ```
 
-
-
-
-
-
+> 动态绘制：改变相应矩阵后，重复执行5.
 
 
 
