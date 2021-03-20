@@ -71,3 +71,30 @@ attribute变量：只在顶点shader中使用；片元shader中可以使用unifo
 
 顶点shader进行的是逐顶点操作，片元shader进行的是逐片元操作。
 
+---
+
+## 静态绘制三部曲
+
+```js
+// 1
+var canvas = document.getElementById('webgl');
+// 2
+var gl = getWebGLContext(canvas);
+// 3
+initShaders(gl, VSHADER_SOURCE, FSHADER_SOURCE);
+// 4
+var n = initVertexBuffers(gl);
+// 5
+gl.clearColor(0, 0, 0, 1);
+gl.clear(gl.COLOR_BUFFER_BIT);
+gl.drawArrays(gl.TRIANGLE_STRIP, 0, n);
+```
+
+
+
+
+
+
+
+
+
