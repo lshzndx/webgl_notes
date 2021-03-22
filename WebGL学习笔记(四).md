@@ -12,6 +12,10 @@
 
 > 旋转变换矩阵\(绕z轴\)
 
+![](/assets/impryort.png)
+
+> 绕任意轴（向量）u旋转θ度。
+
 ![](/assets/transform.png)
 
 > 缩放变换矩阵
