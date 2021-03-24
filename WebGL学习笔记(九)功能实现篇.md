@@ -16,5 +16,18 @@
 
 > 最简单的一种实现方式：线性雾化
 
+---
+
+## 多边形偏移基本原理
+
+```js
+  // Enable the polygon offset function
+  gl.enable(gl.POLYGON_OFFSET_FILL);
+  // Draw the triangles
+  gl.drawArrays(gl.TRIANGLES, 0, n/2);   // The green triangle
+    gl.polygonOffset(1.0, 1.0);          // Set the polygon offset
+  gl.drawArrays(gl.TRIANGLES, n/2, n/2); // The yellow triangle
+```
+
 
 
