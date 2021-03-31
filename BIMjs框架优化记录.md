@@ -109,5 +109,5 @@ function mouseToGL(mouse, canvas, devicePixelRatio = 1) {
 
 ### 静态更新场景
 
-
+具体详见《WebGL学习笔记\(Threejs\)》
 
