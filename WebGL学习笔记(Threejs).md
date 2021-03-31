@@ -75,7 +75,7 @@ WebGLRenderer.render = function(scene, camera) {
 > 2. 手动更新方法：当某个mesh的position、scale、rotation发生改变时，直接更新其matrixWorld\(纠正：matrix与worldMatrix的更新是同步的，不能只更新matrixWorld\)。
 > 3. 坑1：关闭这个选项后，更新mesh的position、scale、rotation会不起作用（原因见上面代码）。
 
-手动更新方式：
+手动更新示例：
 
 ```js
 mesh.position.set(); // 位置更新后
