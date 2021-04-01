@@ -89,6 +89,5 @@ mesh.updateMatrixWorld(); // 再更新matrixWorld
 
 position、rotation、scale、matrix、matrixWorld关系：
 
-
-
+啊啊啊
 
