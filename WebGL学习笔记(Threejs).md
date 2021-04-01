@@ -95,7 +95,6 @@ if \(has parent\) parent.matrixWorld \* matrix ---&gt; matrixWorld;
 
 else matrix ---&gt; matrixWorld \(copy\);
 
-> aaa
-
+> 手动更新场景时，必须遵守这个关系，否则会出现意想不到的bug。
 
 
