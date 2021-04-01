@@ -85,9 +85,10 @@ mesh.updateMatrixWorld(); // 再更新matrixWorld
 
 ---
 
-## Object3D
+## Object3D的变换小结
 
-qqq
+position、rotation、scale、matrix、matrixWorld关系：
+
 
 
 
