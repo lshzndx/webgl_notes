@@ -87,5 +87,7 @@ mesh.updateMatrixWorld(); // 再更新matrixWorld
 
 ## Object3D
 
+qqq
+
 
 
