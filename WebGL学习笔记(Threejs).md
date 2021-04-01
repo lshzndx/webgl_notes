@@ -82,3 +82,6 @@ mesh.position.set(); // 位置更新后
 mesh.updateMatrix(); // 先更新其matrix
 mesh.updateMatrixWorld(); // 再更新matrixWorld
 ```
+
+---
+
