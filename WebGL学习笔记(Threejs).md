@@ -87,10 +87,15 @@ mesh.updateMatrixWorld(); // 再更新matrixWorld
 
 ## Object3D的变换小结
 
-position、rotation(quaternion)、scale、matrix、matrixWorld关系：
+position、rotation\(quaternion\)、scale、matrix、matrixWorld关系：
 
-position、quaternion、scale ---> matrix (compose)
+position、quaternion、scale ---&gt; matrix \(compose\);
 
-if (has parent) parent.matrixWorld * matrix ---> matrixWorld;
+if \(has parent\) parent.matrixWorld \* matrix ---&gt; matrixWorld;
 
-else matrix ---> matrixWorld (copy);
+else matrix ---&gt; matrixWorld \(copy\);
+
+> aaa
+
+
+
