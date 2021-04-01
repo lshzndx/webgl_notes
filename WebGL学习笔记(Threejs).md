@@ -27,7 +27,7 @@ Object3D.updateMatrixWorld = function(force) {
         this.matrixWorldNeedsUpdate = false;
 
         force = true;
-    }    
+    }
 
     const children = this.children;
 
@@ -42,7 +42,7 @@ Object3D.updateMatrixWorld = function(force) {
 Object3D.updateMatrix = function() {
     this.matrix.compose( this.position, this.quaternion, this.scale );
 
-    this.matrixWorldNeedsUpdate = true;    
+    this.matrixWorldNeedsUpdate = true;
 }
 
 // 最终是将Object3D的matrixWorld送入shader
@@ -82,6 +82,3 @@ mesh.position.set(); // 位置更新后
 mesh.updateMatrix(); // 先更新其matrix
 mesh.updateMatrixWorld(); // 再更新matrixWorld
 ```
-
-
-
